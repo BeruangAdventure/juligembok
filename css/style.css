@@ -1,0 +1,396 @@
+.name-tag {
+    color: #7B7B7B;
+    size: 20px;
+}
+
+.bottom-nav {
+    display: flex;
+    padding: var(--layout-xsmall, 12px) 32px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.card-widget {
+    /* padding: var(--layout-large, 16px) var(--layout-xlarge, 24px); */
+    display: flex;
+    width: 165px;
+    height: 190px;
+    border-radius: 12px;
+    background: linear-gradient(294deg, #F8F8FE 3.25%, rgba(232, 234, 242, 0.00) 33.06%), #FFF;
+    /* box-shadow: 2px 2px 5px #888888; */
+}
+
+.card-konten {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.icon-widget {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-widget {
+    color: #293147;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.023%;
+    /* 16.103px */
+}
+
+.button-sukses {
+    border-radius: 12px;
+    background: var(--Success, #37D750);
+    box-shadow: 0px 16px 17px -14px rgba(84, 191, 146, 0.78);
+}
+
+.button-ubah {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Gaya untuk wadah form input */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Gaya untuk ikon dalam form input */
+.search-icon {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 312px;
+    /* Jarak dari kiri */
+    color: #ffffff;
+    /* Warna ikon */
+}
+
+/* Gaya untuk input pencarian */
+.search-input {
+    display: flex;
+    width: 350px;
+    padding: 10px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+/* Gaya untuk wadah form input */
+.input-container {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+
+}
+
+/* Gaya untuk input select */
+.input-select {
+    display: flex;
+    width: 150px;
+    padding: 10px var(--layout-large, 16px);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-size: 12px;
+    left: 10px;
+    color: #fff;
+}
+
+/* Gaya untuk tombol "X" */
+.clear-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.label-pcc {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 166.667% */
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 25px;
+    opacity: 0.5;
+    /* Jarak dari kiri */
+    color: #ffffff;
+}
+
+.option-costum {
+    color: #000;
+}
+
+.card-profile-cstm {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-cst1 {
+    display: flex;
+    height: 38px;
+    padding: 10px var(--layout-medium, 14px);
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 125px;
+    background: rgba(232, 234, 242, 0.24);
+}
+
+.widget-notif {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FFF;
+}
+.kecilkan_font2{
+    font-size : 12px;
+}
+.badge-derek{
+	color: #BC0000;
+	background-color: #FFC3C3;
+    border-color: #FFC3C3;
+}
+.badge-gembok{
+	color: #DC4200;
+	background-color: #FFE0C3;
+    border-color: #FFE0C3;
+}
+.badge-aktif {
+	color: #34B16E;
+	background-color: #34b16e28;
+    border-color: #000;
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+}
+.badge-tidak-aktif {
+	color: #999999;
+	background-color: #b8b8b850;
+    border-color: #000;
+}
+.btn-on{
+	color: #E42915;
+	background-color: #E42915;
+    border-color: #E42915;
+}
+.btn-off{
+	color: #858585;
+	background-color: #f0f0f031;
+    border-color: #dadada;
+}
+.btn-buat-user{
+	color: #202020;
+	background-color: #ffffff;
+    border-color: #dadada;
+}
+.nav-klik {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #7B7B7B;
+}
+  
+.nav-klik:focus {
+    text-decoration: none;
+    color: white;
+    background-color: #ffffff00;
+    border-radius: 20px;
+  }
+  
+  .nav-klik.disabled {
+    color: #7B7B7B;
+    pointer-events: none;
+    cursor: default;
+  }
+.background1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background1 video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive dhimas*/
+@media (min-width: 601px) {
+    .main-content-2 {
+        margin-top: 70px;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .content_1 {
+        margin-bottom: 150px;
+    }
+}
+/* upload foto */
+.upload1 {
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.upload1 img {
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+}
+
+.upload1 .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #000000da;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.upload1 .round input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+input[type=file]::webkit-file-upload-button{
+    cursor: pointer;
+}
+
+/* eye password custom */
+.password-show {
+	font-family: "feather";
+	content: "";
+	position: absolute;
+	right: 25px;
+	border-radius: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* custom card */
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: solid white;
+}
+.hr1 {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+
+.scrollbar1{
+    overflow-y: scroll;
+    height: 85vh;
+}
+
+.scrollbar1::-webkit-scrollbar{
+    display: none;
+}
+
+.cardtambah {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 3px dashed #86868650;
+    border-radius: 10px;
+}
+
+.cardbank {
+    min-height: 20vh;
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.div-1 {
+    background: #EC5545;
+}
+
+.navmenu1 {
+    padding: 0;
+  }
+
+  .navmenu1 ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navmenu1 li {
+    position: relative;
+  }
+
+  .navmenu1 a,
+  .navmenu1 a:focus {
+    color: #7B7B7B;
+    font-size: 14px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
