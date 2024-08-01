@@ -1,0 +1,1045 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/G.png">
+  <title>Gembok | Data Tilang</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="css/virtual-select.min.css">  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Include Date Range Picker -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <img src="assets/images/Gembok.svg" style="height: 30px; height: 40px;" alt="">
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          
+          <ul class="nav text-center" style="background-color: #161616; border-radius: 16px;">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-squares-four fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link active" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-scroll fe-24 active"></i><span class="ml-lg-2" style="font-size: 14;">Data Denda</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="template_surat.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-file-text fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Template Surat</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-gear fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Pengaturan</span>
+              </a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <span class="avatar avatar-sm mt-2 name-tag">
+            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+          </span>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <h2 class="h1 page-title" style="color: #000000;">Data Laporan</h2>
+            <h2 class="h1 page-title" style="color: #000000;">Pelanggaran Parkir</h2>
+          </div>
+          <div class="col-md-auto">
+            <span class="page-title" style="color: #000000;"><b>Total Data Denda</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>123 <i class="ph ph-coins fe-16"></i></b></h2>
+          </div>
+          <div class="col col-lg-2">
+            <span class="page-title" style="color: #000000;"><b>Perlu Tindakan</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>3 <i class="ph ph-warning-circle fe-16"></i></b></h2>
+          </div>
+        </div>
+
+        <!-- Konten Grafik -->
+        <div class="row justify-content-center" style="margin-top: 50px;">
+          <div class="col-md-12">
+            <div class="mb-2">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                    <div class="col-md-9">
+                      <h2 class="h5 page-title" style="color: #000000;">Kriteria Utama</h2> 
+                    </div>
+                    <div class="col-md-3">
+                      <form>
+                        <div class="form-group row">
+                          <label for="inputnama" class="col-sm-4 col-form-label" style="color: #9A9A9A;"><b>Periode Data</b></label>
+                          <div class="col-sm-8">
+                            <input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-12">                 
+                      <!-- card 3 custom -->
+                      <div class="row">
+                        <div class="col-md-2 mb-4">
+                          <div class="card1 shadow" style="border-bottom-color: #79e415; border-bottom-width: 5px; padding: 0rem;">
+                            <div class="card-body">
+                              <div class="col">
+                                <strong>Total Denda Terkumpul</strong>
+                                <p class="h5" style="margin-top: 10px;">Rp.285.804K</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                          <div class="card1 shadow" style="border-bottom-color: #9747FF; border-bottom-width: 5px; padding: 0rem;">
+                            <div class="card-body">
+                              <div class="col">
+                                <strong>Tilang Gembok</strong>
+                                <p class="h5" style="margin-top: 10px;">2188</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                          <div class="card1 shadow" style="border-bottom-color: #F5BE4F; border-bottom-width: 5px; padding: 0rem;">
+                            <div class="card-body">
+                              <div class="col">
+                                <strong>Tilang Derek</strong>
+                                <p class="h5" style="margin-top: 10px;">Rp.2188</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                                                
+                      </div>
+
+                      <div class="card-body">
+                        <canvas id="myChart" width="200" height="40"></canvas>
+                      </div>                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!-- End Konten Grafik -->
+
+        <!-- custom menu -->
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-md-12 mb-4">
+            <ul class="nav nav-pills" id="pills-tab2" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link px-3 active" id="pills-semua" data-toggle="pill" href="#semua" role="tab" aria-controls="pills-semua" aria-selected="true">Semua</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" id="pills-diproses" data-toggle="pill" href="#diproses" role="tab" aria-controls="pills-diproses" aria-selected="false">Perlu Tindakan <span class="badge badge-pill badge-danger">10</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" id="pills-selesai-bayar" data-toggle="pill" href="#pills-selesai" role="tab" aria-controls="pills-selesai-bayar" aria-selected="false">Selesai</a>
+              </li>
+                <div class="col text-right">
+                  <button type="button" data-toggle="modal" data-target="#buatdendabaru" class="btn btn-sm text-white" style="border-radius: 10px; 
+                  background-color: #E42915; border-color: #E42915;">
+                    Buat Denda Baru</button>
+                  <button type="button" class="btn btn-sm" style="border-radius: 10px; border-color: gray;">
+                      Export</button>
+                </div>
+                <!-- Modal Buat Data Denda -->
+                <div class="modal fade text-left" id="buatdendabaru" tabindex="-1" role="dialog"
+                aria-labelledby="verticalModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content" style="border-radius: 16px; border: none;">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="defaultModalLabel">Tambah Data Denda - ID Billing 2405091.1181 CNCS</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row" style="margin-top: 15px;">
+                              <div class="col-md-4 mb-4">
+                                <h5 style="color: #152C5B;">Informasi Pengemudi</h5>
+                                <span class="strong">
+                                  Profil informasi pengemudi
+                                </span>
+                              </div>
+                              <div class="col-md-8 mb-4">
+                                <form>
+                                  <div class="form-group row">
+                                    <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b></label>
+                                    <div class="col-sm-9">
+                                      <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
+                                    </div>
+                                  </div>
+                                
+                                </form>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row" style="margin-top: 30px;">
+                              <div class="col-md-4 mb-4">
+                                <h5 style="color: #152C5B;">Informasi Kendaraan</h5>
+                              </div>
+                              <div class="col-md-8 mb-4">
+                                <form>
+                                  <div class="form-group row">
+                                    <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Jenis Kendaraan </b><span style="color: #FF0000;">*</span></label>
+                                    <div class="col-sm-9">
+                                      <select class="form-control" id="example-select1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputnoplat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No.Plat</b><span style="color: #FF0000;">*</span></label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="inputnoplat" placeholder="AD 1111 FG">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputlokasikendaraan" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Lokasi Kendaraan</b></label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="inputlokasikendaraan" placeholder="Lokasi kendaraan ditilang">
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row" style="margin-top: 30px;">
+                              <div class="col-md-4 mb-4">
+                                <h5 style="color: #152C5B;">Informasi Denda</h5>
+                              </div>
+                              <div class="col-md-8 mb-4">
+                                <form>
+                                  <div class="form-group row">
+                                    <label for="example-select1" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Jenis Tilang </b><span style="color: #FF0000;">*</span></label>
+                                    <div class="col-sm-9">
+                                      <select class="form-control" id="example-select1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="example-disable" class="col-sm-3 col-form-label text-right" style="color: #9A9A9A;">Total Denda</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="example-disable" disabled="" value="Rp -">
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                              <div class="text-right mt-3">
+                                  <button type="button" class="btn mb-2 btn-off "
+                                      data-dismiss="modal"
+                                      style="border-radius: 16px;"> Batal </button>
+                                  <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal Buat Data Denda -->                
+            </ul>
+
+            <div class="tab-content mb-2" id="pills-tabContent2">
+              <!-- Konten semua -->
+              <div class="tab-pane fade show active" id="semua" role="tabpanel" aria-labelledby="pills-semua">
+                <div class="card mb-0" style="border-radius: 12px; border-top-left-radius: 0px;">
+                  <div class="card-body">
+                    <div class="row justify-content">
+                      <div class="col-md-4 mb-2">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+                      </div>
+                      <div class="col-md-8 mb-2 text-right">
+                        <div class="row">
+                          <div class="col-sm-5"></div>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                          </div>
+                          <div class="col-sm-3">
+                            <select id="multi_option" multiple name="native-select" placeholder="= Filter" data-silent-initial-value-set="false" style="border-radius: 20px;">
+                              <option value="1">Last Modified</option>
+                              <option value="2">Alphabetical Ascending</option>
+                              <option value="3">Alphabetical Descending</option>
+                              <option value="4">Date Created Oldest</option>
+                              <option value="5">Date Created Newest</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3" style="border-radius: 12px;">
+                      <div class="col-md-12">
+                        <div class="card" style="height: 600px;">
+                          <div class="card-body">
+                            <!-- table start -->
+                          <div class="table-responsive"> 
+                            <table class="table datatables" id="dataTable-1">
+                              <thead style="background-color: #f0e6e667;">
+                                <tr>
+                                  <th style="color: #CF7979;">ID Biling</th>
+                                  <th style="color: #CF7979;">Tanggal</th>
+                                  <th style="color: #CF7979;">No.Plat</th>
+                                  <th style="color: #CF7979;">Lokasi | Atas Nama</th>
+                                  <th style="color: #CF7979;">Jenis Kendaraan</th>
+                                  <th style="color: #CF7979;">Jenis Tilang</th>
+                                  <th style="color: #CF7979;">Tarif Denda</th>
+                                  <th style="color: #CF7979;">Status</th>
+                                  <th style="color: #CF7979;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Perlu Tindakan</b></p>
+                                    <small class="mb-0 text-muted">Sudah Ditindak?
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Motor</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Perlu Tindakan</b></p>
+                                    <small class="mb-0 text-muted">Sudah Ditindak?
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Belum Diambil</b></p>
+                                    <small class="mb-0 text-muted">Menunggu pengemudi menggambil kendaraan</small><br>
+                                    <small class="mb-0 text-muted">Sudah Ditindak 
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Selesai</b></p>
+                                  </td>
+                                  <td>
+                                    <a href="view_selesai.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Selesai</b></p>
+                                  </td>
+                                  <td>
+                                    <a href="view_selesai.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                            <!-- table end -->
+                          <!-- Modal Hapus User Data Tilang -->
+                          <div class="modal fade" id="hapustilang" tabindex="-1" role="dialog"
+                          aria-labelledby="verticalModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                                  style="border-radius: 50%;">
+                                  <div class="modal-content" style="border-radius: 16px; border: none;">
+                                    <div class="modal-body text-center">
+                                        <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                                        <span class="strong">Data akan dihapus selamanya</span>
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="btn mb-2 btn-off "
+                                                data-dismiss="modal"
+                                                style="border-radius: 16px;">Batal</button>
+                                            <button type="button" class="btn mb-2 btn-on text-white"
+                                                style="border-radius: 16px;"
+                                                data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Hapus</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Modal Hapus Data Tilang -->
+                          <!-- Modal Lihat Bukti Pembayaran -->
+                          <div class="modal fade" id="tampilbukti" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-md" role="document"
+                            style="border-radius: 50%;">
+                              <div class="modal-content" style="border-radius: 16px; border: none;">
+                                <img src="./assets/images/bukti1.png">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Bukti Pembayaran -->
+                      <!-- Modal Konfirmasi Pembayaran -->
+                      <div class="modal fade" id="konfirmasipembayaran" tabindex="-1" role="dialog"
+                      aria-labelledby="verticalModalTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content" style="border-radius: 16px; border: none;">
+                                <div class="modal-body">
+                                    <h5 style="color: #000000;">Konfirmasi Pembayaran</h5>
+                                    <p style="background-color: #FEE6DE; color: red; font-size: large;"><span class="fe fe-alert-triangle"></span> Setelah dikonfirmasi, status tidak dapat diubah. Anda yakin ingin tetap melanjutkan?</p>
+                                    <span class="strong">
+                                      Pastikan nominal pada bukti pembayaran sesuai dengan tarif denda yang diterapkan, dan Rekening Tujuan pembayaran sesuai.
+                                    </span>
+                                    <div class="text-right mt-3">
+                                        <button type="button" class="btn mb-2 btn-off "
+                                            data-dismiss="modal"
+                                            style="border-radius: 16px;">Cancel</button>
+                                        <a href="view_selesai.html"><button type="button" class="btn mb-2 btn-on text-white"
+                                            style="border-radius: 16px;">Konfirmasi</button></a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Modal Konfirmasi Pembayaran -->
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Konten Perlu Tindakan -->
+              <div class="tab-pane fade" id="diproses" role="tabpanel" aria-labelledby="pills-diproses">
+                <div class="card mb-0" style="border-radius: 12px;">
+                  <div class="card-body">
+                    <div class="row justify-content">
+                      <div class="col-md-4 mb-2">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+                      </div>
+                      <div class="col-md-8 mb-2 text-right">
+                        <div class="row">
+                          <div class="col-sm-5"></div>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                          </div>
+                          <div class="col-sm-3">
+                            <select id="multi_option" multiple name="native-select" placeholder="= Filter" data-silent-initial-value-set="false" style="border-radius: 20px;">
+                              <option value="1">Last Modified</option>
+                              <option value="2">Alphabetical Ascending</option>
+                              <option value="3">Alphabetical Descending</option>
+                              <option value="4">Date Created Oldest</option>
+                              <option value="5">Date Created Newest</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3" style="border-radius: 12px;">
+                      <div class="col-md-12">
+                        <div class="card" style="height: 600px;">
+                          <div class="card-body">
+                            <!-- table start -->
+                          <div class="table-responsive"> 
+                            <table class="table datatables" id="dataTable-1">
+                              <thead style="background-color: #f0e6e667;">
+                                <tr>
+                                  <th style="color: #CF7979;">ID Biling</th>
+                                  <th style="color: #CF7979;">Tanggal</th>
+                                  <th style="color: #CF7979;">No.Plat</th>
+                                  <th style="color: #CF7979;">Lokasi | Atas Nama</th>
+                                  <th style="color: #CF7979;">Jenis Kendaraan</th>
+                                  <th style="color: #CF7979;">Jenis Tilang</th>
+                                  <th style="color: #CF7979;">Tarif Denda</th>
+                                  <th style="color: #CF7979;">Status</th>
+                                  <th style="color: #CF7979;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Perlu Tindakan</b></p>
+                                    <small class="mb-0 text-muted">Sudah Ditindak?
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran2"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti2" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang2" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Motor</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Perlu Tindakan</b></p>
+                                    <small class="mb-0 text-muted">Sudah Ditindak?
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran2"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti2" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang2" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Belum Diambil</b></p>
+                                    <small class="mb-0 text-muted">Menunggu pengemudi menggambil kendaraan</small><br>
+                                    <small class="mb-0 text-muted">Sudah Ditindak 
+                                      <a data-toggle="modal" data-target="#konfirmasipembayaran2"><button type="button" class="btn btn-sm" style="border-radius: 10px; color: #2077F9; border-color: rgb(235, 235, 235);">Verifikasi Tilang Selesai</button></a>
+                                    </small>
+                                  </td>
+                                  <td>
+                                    <a href="view_perlu_tindakan.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti2" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang2" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>                                
+                              </tbody>
+                            </table>
+                          </div>
+                            <!-- table end -->
+                          <!-- Modal Hapus User Data Tilang -->
+                          <div class="modal fade" id="hapustilang2" tabindex="-1" role="dialog"
+                          aria-labelledby="verticalModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                                  style="border-radius: 50%;">
+                                  <div class="modal-content" style="border-radius: 16px; border: none;">
+                                    <div class="modal-body text-center">
+                                        <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                                        <span class="strong">Data akan dihapus selamanya</span>
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="btn mb-2 btn-off "
+                                                data-dismiss="modal"
+                                                style="border-radius: 16px;">Batal</button>
+                                            <button type="button" class="btn mb-2 btn-on text-white"
+                                                style="border-radius: 16px;"
+                                                data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Hapus</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Modal Hapus Data Tilang -->
+                          <!-- Modal Lihat Bukti Pembayaran -->
+                          <div class="modal fade" id="tampilbukti2" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-md" role="document"
+                            style="border-radius: 50%;">
+                              <div class="modal-content" style="border-radius: 16px; border: none;">
+                                <img src="./assets/images/bukti1.png">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Bukti Pembayaran -->
+                          <!-- Modal Konfirmasi Pembayaran -->
+                          <div class="modal fade" id="konfirmasipembayaran2" tabindex="-1" role="dialog"
+                          aria-labelledby="verticalModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                  <div class="modal-content" style="border-radius: 16px; border: none;">
+                                    <div class="modal-body">
+                                        <h5 style="color: #000000;">Konfirmasi Pembayaran</h5>
+                                        <p style="background-color: #FEE6DE; color: red; font-size: large;"><span class="fe fe-alert-triangle"></span> Setelah dikonfirmasi, status tidak dapat diubah. Anda yakin ingin tetap melanjutkan?</p>
+                                        <span class="strong">
+                                          Pastikan nominal pada bukti pembayaran sesuai dengan tarif denda yang diterapkan, dan Rekening Tujuan pembayaran sesuai.
+                                        </span>
+                                        <div class="text-right mt-3">
+                                            <button type="button" class="btn mb-2 btn-off "
+                                                data-dismiss="modal"
+                                                style="border-radius: 16px;">Cancel</button>
+                                            <a href="view_selesai.html"><button type="button" class="btn mb-2 btn-on text-white"
+                                                style="border-radius: 16px;">Konfirmasi</button></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Modal Konfirmasi Pembayaran -->
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Konten Selesai -->            
+              <div class="tab-pane fade" id="pills-selesai" role="tabpanel" aria-labelledby="pills-selesai-bayar">
+                <div class="card mb-0" style="border-radius: 12px;">
+                  <div class="card-body">
+                    <div class="row justify-content">
+                      <div class="col-md-4 mb-2">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+                      </div>
+                      <div class="col-md-8 mb-2 text-right">
+                        <div class="row">
+                          <div class="col-sm-5"></div>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                          </div>
+                          <div class="col-sm-3">
+                            <select id="multi_option" multiple name="native-select" placeholder="= Filter" data-silent-initial-value-set="false" style="border-radius: 20px;">
+                              <option value="1">Last Modified</option>
+                              <option value="2">Alphabetical Ascending</option>
+                              <option value="3">Alphabetical Descending</option>
+                              <option value="4">Date Created Oldest</option>
+                              <option value="5">Date Created Newest</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3" style="border-radius: 12px;">
+                      <div class="col-md-12">
+                        <div class="card" style="height: 600px;">
+                          <div class="card-body">
+                            <!-- table start -->
+                          <div class="table-responsive"> 
+                            <table class="table datatables" id="dataTable-1">
+                              <thead style="background-color: #f0e6e667;">
+                                <tr>
+                                  <th style="color: #CF7979;">ID Biling</th>
+                                  <th style="color: #CF7979;">Tanggal</th>
+                                  <th style="color: #CF7979;">No.Plat</th>
+                                  <th style="color: #CF7979;">Lokasi | Atas Nama</th>
+                                  <th style="color: #CF7979;">Jenis Kendaraan</th>
+                                  <th style="color: #CF7979;">Jenis Tilang</th>
+                                  <th style="color: #CF7979;">Tarif Denda</th>
+                                  <th style="color: #CF7979;">Status</th>
+                                  <th style="color: #CF7979;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Mobil</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Selesai</b></p>
+                                  </td>
+                                  <td>
+                                    <a href="view_selesai.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti3" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang3" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="small">2405091.1181 CNCS</td>
+                                  <td class="small">09/05/2024 | 08:20</td>
+                                  <td class="small">H 6869 TF</td>
+                                  <td>
+                                    <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
+                                    <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
+                                  </td>
+                                  <td class="small">Motor</td>
+                                  <td class="small">Gembok</td>
+                                  <td class="small">Rp.100.000</td>
+                                  <td>
+                                    <p class="mb-0 small"><b>Selesai</b></p>
+                                  </td>
+                                  <td>
+                                    <a href="view_selesai.html" style="color: #2077F9;"><span class="fe fe-file-text small"> Periksa Rincian</span></a>
+                                    <br><a data-toggle="modal" data-target="#tampilbukti3" style="color: #2077F9;"><span class="fe fe-file-text small"> Lihat Bukti Pembayaran</span></a>
+                                    <br><a data-toggle="modal" data-target="#hapustilang3" style="color: #E42915;"><span class="fe fe-trash-2 small"> Hapus</span></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                            <!-- table end -->
+                          <!-- Modal Hapus User Data Tilang -->
+                          <div class="modal fade" id="hapustilang3" tabindex="-1" role="dialog"
+                          aria-labelledby="verticalModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                                  style="border-radius: 50%;">
+                                  <div class="modal-content" style="border-radius: 16px; border: none;">
+                                    <div class="modal-body text-center">
+                                        <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                                        <span class="strong">Data akan dihapus selamanya</span>
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="btn mb-2 btn-off "
+                                                data-dismiss="modal"
+                                                style="border-radius: 16px;">Batal</button>
+                                            <button type="button" class="btn mb-2 btn-on text-white"
+                                                style="border-radius: 16px;"
+                                                data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Hapus</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Modal Hapus Data Tilang -->
+                          <!-- Modal Lihat Bukti Pembayaran -->
+                          <div class="modal fade" id="tampilbukti3" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-md" role="document"
+                            style="border-radius: 50%;">
+                              <div class="modal-content" style="border-radius: 16px; border: none;">
+                                <img src="./assets/images/bukti1.png">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Bukti Pembayaran -->
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Custom menu -->
+
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+  <script>
+    // Script untuk menghapus pilihan saat tombol "X" ditekan
+    document.querySelector('.clear-button').addEventListener('click', function () {
+      const selectElement = document.querySelector('.input-select');
+      selectElement.value = '';
+    });
+
+    // Script untuk menampilkan/menghilangkan tombol "X" berdasarkan pilihan yang dipilih
+    const selectElement = document.querySelector('.input-select');
+    selectElement.addEventListener('change', function () {
+      const clearButton = document.querySelector('.clear-button');
+      clearButton.style.display = this.value !== '' ? 'block' : 'none';
+    });
+  </script>
+  <!-- Multi Select Custome -->
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+    VirtualSelect.init({
+      ele: '#multi_option',
+      // showValueAsTags: true,
+      
+    });
+    VirtualSelect.init({
+      ele: '#sample-select',
+      options: [
+        { label: 'Semua', value: '1' },
+        { label: 'Trial', value: '2' },
+        { label: 'Kontrak', value: '3' },
+        // { label: 'Options 3', value: '3' },
+      ],
+    });
+  </script>  
+  <!-- Grafik Custom -->
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['1 Mei', '2 Mei', '3 Mei', '4 Mei', '5 Mei', '6 Mei', '7 Mei', '8 Mei', '9 Mei', '10 Mei', '11 Mei', '12 Mei'],
+        datasets: [{
+          label: 'Total Denda Terkumpul',
+          data: [980000, 976000, 1390000, 865000, 578000, 922700, 1123900, 1523800, 334000, 157800, 434800, 570000],
+          borderWidth: 2,
+          fill : false,
+          borderColor: ['rgb(133, 216, 51)'],
+        }, 
+        {
+          label: 'Tilang Gembok',
+          
+          data: [1289000, 1956000, 378600, 545900, 234000, 3456800, 777900, 867800, 856600, 978000, 778900, 130000],
+          borderWidth: 2,
+          fill :false,
+          borderColor: ['rgb(151, 71, 255)'],
+        },
+        {
+          label: 'Tilang Derek',
+          
+          data: [1589000, 956000, 728600, 175900, 974000, 2156800, 107900, 367800, 176600, 428000, 418900, 250000],
+          borderWidth: 2,
+          fill : false,
+          borderColor: ['rgb(245, 190, 79)'],
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <script>
+    const actions = [
+  {
+    name: 'Position: bottom',
+    handler(chart) {
+      chart.options.plugins.legend.position = 'bottom';
+      chart.update();
+    }
+  },
+];
+  </script>
+<!-- Script Include Date Range Picker -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script><script>
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

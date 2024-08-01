@@ -1,0 +1,494 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/G.png">
+  <title>Gembok | Dashboard</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <img src="assets/images/Gembok.svg" style="height: 30px; height: 40px;" alt="">
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          
+          <ul class="nav text-center" style="background-color: #161616; border-radius: 16px;">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-squares-four fe-24 active"></i><span class="ml-lg-2" style="font-size: 14;">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-scroll fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Data Denda</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="template_surat.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-file-text fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Template Surat</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-gear fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Pengaturan</span>
+              </a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <span class="avatar avatar-sm mt-2 name-tag">
+            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+          </span>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="mb-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <h2 class="page-title" style="color: #000000; font-size: 40px;">Dashboard</h2>
+                            <h2 class="page-title" style="color: #000000; font-size: 40px;">Overview</h2>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card-body" style="border-radius: 30px; background-color: #ffffff;">
+                                <div class="row align-items-center">
+                                  <div class="col pr-0">
+                                    <div class="row align-items-center" style="margin-bottom: 30px;">
+                                      <div class="col-7">
+                                        <p style="color: #000000; margin-bottom: 60px;"><b>Laporan Pelanggaran <br>Parkir</b></p>
+                                      </div>
+                                      <div class="col-5 text-right">
+                                        <img src="./assets/images/iconup.png" style="height: 70px; width: 70px; margin-right: 10px; margin-bottom: 20px;">                                                       
+                                      </div>
+                                    </div>
+                                    <span class="page-title" style="color: #000000;">Jumlah Laporan Tilang dibuat</span>
+                                    <h2 class="h2 page-title" style="color: #000000; font-weight: normal;"><b>1356</b></h2>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card-body" style="border-radius: 30px; background-color: #D2D2D2;">
+                                <div class="row align-items-center">
+                                  <div class="col pr-0">
+                                    <div class="row align-items-center" style="margin-bottom: 30px;">
+                                      <div class="col-7">
+                                        <p style="color: #ffffff; margin-bottom: 60px;"><b>Presentase Pelanggaran Parkir</b></p>
+                                      </div>
+                                      <div class="col-5 text-right">
+                                        <img src="./assets/images/iconup.png" style="height: 70px; width: 70px; margin-right: 10px; margin-bottom: 20px;">                                                       
+                                      </div>
+                                    </div>
+                                    <span class="page-title" style="color: #ffffff;">Dibandingkan bulan sebelumnya</span>
+                                    <h2 class="h2 page-title" style="color: #ffffff; font-weight: normal;"><b><span class="fe fe-trending-up fe-12"></span> 20.5</b></h2>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card-body" style="border-radius: 30px; background-color: #0C0C0C;">
+                                <div class="row align-items-center">
+                                  <div class="col pr-0">
+                                    <div class="row align-items-center" style="margin-bottom: 30px;">
+                                      <div class="col-7 mb-2">
+                                        <p style="color: #ffffff; margin-bottom: 60px;"><b>Total Hasil Denda Pelanggaran Parkir</b></p>
+                                      </div>
+                                      <div class="col-5 mb-2 text-right">
+                                        <img src="./assets/images/iconup.png" style="height: 70px; width: 70px; margin-right: 10px; margin-bottom: 20px;">                                                       
+                                      </div>
+                                    </div>
+                                    <span class="page-title" style="color: #ffffff;">Jumlah uang denda terkumpul</span>
+                                    <h2 class="h3 page-title" style="color: #ffffff; font-weight: normal;"><b>IDR 15.000.000</b></h2>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 20px;">
+          <div class="col-lg-12">
+            <div class="row align-items-center mb-2">
+              <div class="col">
+                <h2 class="h5 page-title" style="color: #7B7B7B;">Statistik Data Denda</h2>
+                <h2 class="h5 page-title" style="color: #000000;">Data Statistik Jumlah Laporan Pelanggaran Parkir Per Bulan</h2>
+              </div>
+            </div>
+            <!--isi konten  -->
+          </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <img src="./assets/images/icongembok.png"> Gembok 
+            <img src="./assets/images/iconderek.png"> Derek
+          </div>
+          
+          <div class="col-md-auto">
+            <div class="dropdown">
+              <button class="btn btn-muted dropdown-toggle" type="button" id="actionMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 12 Bulan Terakhir </button>
+              <div class="dropdown-menu" aria-labelledby="actionMenuButton">
+                <a class="dropdown-item" href="#">12 Bulan Terakhir</a>
+                <a class="dropdown-item" href="#">1 Bulan Terakhir</a>
+                <a class="dropdown-item" href="#">1 Minggu Terakhir</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-auto">
+              <button class="btn bg-white rounded-circle" type="button"><span class="fe fe-share"></span></button>
+          </div>
+        </div>
+
+        <!-- Coba 2-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body" style="border-radius: 20px;">
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myChart" width="inherit" height="inherit"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      </div> <!-- .container-fluid -->
+
+      
+
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script>
+    /* defind global options */
+    Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+    Chart.defaults.global.defaultFontColor = colors.mutedColor;
+  </script>
+  <script src="js/gauge.min.js"></script>
+  <script src="js/jquery.sparkline.min.js"></script>
+  <script src="js/apexcharts.min.js"></script>
+  <script src="js/apexcharts.custom.js"></script>
+  <script src='js/jquery.mask.min.js'></script>
+  <script src='js/select2.min.js'></script>
+  <script src='js/jquery.steps.min.js'></script>
+  <script src='js/jquery.validate.min.js'></script>
+  <script src='js/jquery.timepicker.js'></script>
+  <script src='js/dropzone.min.js'></script>
+  <script src='js/uppy.min.js'></script>
+  <script src='js/quill.min.js'></script>
+  <script>
+    $('.select2').select2(
+      {
+        theme: 'bootstrap4',
+      });
+    $('.select2-multi').select2(
+      {
+        multiple: true,
+        theme: 'bootstrap4',
+      });
+    $('.drgpicker').daterangepicker(
+      {
+        singleDatePicker: true,
+        timePicker: false,
+        showDropdowns: true,
+        locale:
+        {
+          format: 'MM/DD/YYYY'
+        }
+      });
+    $('.time-input').timepicker(
+      {
+        'scrollDefault': 'now',
+        'zindex': '9999' /* fix modal open */
+      });
+    /** date range picker */
+    if ($('.datetimes').length) {
+      $('.datetimes').daterangepicker(
+        {
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale:
+          {
+            format: 'M/DD hh:mm A'
+          }
+        });
+    }
+    var start = moment().subtract(29, 'days');
+    var end = moment();
+
+    function cb(start, end) {
+      $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+    $('#reportrange').daterangepicker(
+      {
+        startDate: start,
+        endDate: end,
+        ranges:
+        {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+    cb(start, end);
+    $('.input-placeholder').mask("00/00/0000",
+      {
+        placeholder: "__/__/____"
+      });
+    $('.input-zip').mask('00000-000',
+      {
+        placeholder: "____-___"
+      });
+    $('.input-money').mask("#.##0,00",
+      {
+        reverse: true
+      });
+    $('.input-phoneus').mask('(000) 000-0000');
+    $('.input-mixed').mask('AAA 000-S0S');
+    $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+      {
+        translation:
+        {
+          'Z':
+          {
+            pattern: /[0-9]/,
+            optional: true
+          }
+        },
+        placeholder: "___.___.___.___"
+      });
+    // editor
+    var editor = document.getElementById('editor');
+    if (editor) {
+      var toolbarOptions = [
+        [
+          {
+            'font': []
+          }],
+        [
+          {
+            'header': [1, 2, 3, 4, 5, 6, false]
+          }],
+        ['bold', 'italic', 'underline', 'strike'],
+        ['blockquote', 'code-block'],
+        [
+          {
+            'header': 1
+          },
+          {
+            'header': 2
+          }],
+        [
+          {
+            'list': 'ordered'
+          },
+          {
+            'list': 'bullet'
+          }],
+        [
+          {
+            'script': 'sub'
+          },
+          {
+            'script': 'super'
+          }],
+        [
+          {
+            'indent': '-1'
+          },
+          {
+            'indent': '+1'
+          }], // outdent/indent
+        [
+          {
+            'direction': 'rtl'
+          }], // text direction
+        [
+          {
+            'color': []
+          },
+          {
+            'background': []
+          }], // dropdown with defaults from theme
+        [
+          {
+            'align': []
+          }],
+        ['clean'] // remove formatting button
+      ];
+      var quill = new Quill(editor,
+        {
+          modules:
+          {
+            toolbar: toolbarOptions
+          },
+          theme: 'snow'
+        });
+    }
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- Membuat Grafik Custom -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Nov 2022', 'Des 2022', 'Jan 2023', 'Feb 2023', 'Mar 2023', 'Apr 2023', 'Mei 2023', 'Jun 2023', 'Jul 2023', 'Ags 2023', 'Sep 2023', 'Oct 2023'],
+        datasets: [{
+          label: 'Gembok',
+          data: [9, 9, 13, 8, 5, 9, 11, 15, 3, 15, 4, 5],
+          borderWidth: 2,
+          borderRadius: 25,
+          backgroundColor: ['rgb(228, 41, 21)'],
+          borderColor: ['rgb(255, 99, 132)'],
+        }, 
+        {
+          label: 'Derek',
+          data: [12, 19, 3, 5, 2, 3, 7, 8, 8, 9, 7, 13],
+          borderWidth: 2,
+          borderRadius: 25,
+          backgroundColor: ['rgb(206, 206, 206)'],
+          borderColor: ['rgb(206, 206, 206)'],
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

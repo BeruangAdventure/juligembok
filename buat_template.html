@@ -1,0 +1,446 @@
+`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/G.png">
+  <title>Gembok | Template Surat</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="css/virtual-select.min.css">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- link tinymce -->
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea'});</script>
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <img src="assets/images/Gembok.svg" style="height: 30px; height: 40px;" alt="">
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+
+          <ul class="nav text-center" style="background-color: #161616; border-radius: 16px;">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-squares-four fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-scroll fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Data Denda</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="template_surat.html" class="nav-link active" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-file-text fe-24 active"></i><span class="ml-lg-2" style="font-size: 14;">Template Surat</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="ph ph-gear fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Pengaturan</span>
+              </a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <span class="avatar avatar-sm mt-2 name-tag">
+            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+          </span>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <!-- Konten Utama Layout Surat -->
+        <div class="row justify-content-center mt-3" style="margin-top: 50px;">
+          <!-- Sebelah Kanan -->
+          <div class="col-md-8 scrollbar1">
+            <div class="mb-2">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                    <div class="col-12">
+                      <h2 class="h3 page-title" style="color: #152C5B;"><a href="template_surat.html">
+                          <span class="fe fe-arrow-left" style="color: #000000;"></span></a> Kembali</h2>
+                    </div>
+                    <div class="col">
+                      <h2 class="h1 page-title" style="color: #152C5B;">Gembok Motor</h2>
+                    </div>
+                    <div class="col-12">
+                      <h2 class="h3 page-title" style="color: #152C5B;">Header</h2>
+                      <p class="text-muted">Atur nama Instansi, Logo, dan Alamat kontak.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput" style="color: #152C5B;"><b>Nama Pemerintah Daerah </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="text" id="simpleinput" class="form-control"
+                          placeholder="Masukan nama pemerindah daerah" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email" style="color: #152C5B;"><b>Logo Kota/Kab </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="alamat" style="color: #152C5B;"><b>Alamat </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="text" id="alamat" class="form-control" placeholder="Masukan alamat" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="email" style="color: #152C5B;"><b>Email </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="email" id="email" class="form-control" placeholder="Masukan email">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="namainstansi" style="color: #152C5B;"><b>Nama Instansi </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="text" id="namainstansi" class="form-control" placeholder="Masukan nama instansi"
+                          required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email" style="color: #152C5B;"><b>Logo Instansi </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="website" style="color: #152C5B;"><b>Website </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="text" id="website" class="form-control" placeholder="www.website.com" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="kodepos" style="color: #152C5B;"><b>Kode Pos </b><span
+                            style="color: #FF0000;">*</span></label>
+                        <input type="number" id="kodepos" class="form-control" placeholder="Masukan kode pos">
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <h2 class="h3 page-title" style="color: #152C5B;">Pasal Pelanggaran</h2>
+                      <p class="text-muted">Tulis pasal pelangaran yang dilanggar oleh pengemudi.</p>
+                      <div class="d-flex">
+                        <div class="col mb-2">
+                          <textarea name="content" height="100px"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <h2 class="h3 page-title" style="color: #152C5B;">Tata Cara Pembayaran</h2>
+                      <p class="text-muted">Apa yang perlu dilakukan pengemudi untuk menyelesaikan tilang.</p>
+                      <div class="d-flex">
+                        <div class="col mb-2">
+                          <textarea name="content" height="100px"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <h2 class="h5 page-title" style="color: #152C5B;">Lainnya</h2>
+                      <p class="text-muted">Tambahan lain-lain.</p>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                      <form>
+                        <div class="form-group row">
+                          <label for="kodeqr" class="col-sm-3 col-form-label" style="color: #152C5B;"><b>Link Kode QR
+                            </b><span style="color: #FF0000;">*</span></label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="kodeqr" placeholder="Masukkan Link">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col text-right">
+                      <button type="button" class="btn btn text-white" style="border-radius: 15px; background-color: #E42915; margin-top: 40;">Simpan</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sebelah Kanan -->
+
+          <!-- Sebelah Kiri -->
+          <div class="col-md-4">
+            <div class="mb-2">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                    <div class="col-12">
+                      <h2 class="h3 page-title" style="color: #020202;">Tampilan surat tilang</h2>
+                    </div>
+                    <!-- <div class="col-md-12 text-center">
+                      <img src="./assets/images/surat.jpg" style="height: inherit; width: inherit;">
+                    </div> -->
+                    <!-- template HTML -->
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-2">
+                          <div class="row" style="margin-top: 20px; margin-bottom: 90px;">
+                            <!-- Mulai Template -->
+                            <div class="col-md-2 mb-2" style="margin-top: 10px;">
+                                <img src="./assets/images/logosurakarta.png" height="45" width="50">
+                            </div>
+                            <div class="col-md-8 mb-2 text-center">
+                                <h2 class="h6 page-title" style="color: #000000;">PEMERINTAH KOTA SURAKARTA<br>DINAS PERHUBUNGAN KOTA SURAKARTA</h2>
+                                <p style="font-size: 9;">JL.Menteri Supeno No.7 Surakarta Telp (0271)717470
+                                    <br>Website : <a style="color: #3175DB;">www.dishub.surakarta.go.id</a> Email : <a style="color: #3175DB;">dishub@surakarta.go.id</a>
+                                    <br>SURAKARTA 57136
+                                </p>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <img src="./assets/images/logodishub.png" height="45" width="45">
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <h2 class="h6 page-title text-center" style="color: #000000;">TANDA PEMINDAHAN KENDARAAN</h2>
+                                <P class="text-center" style="color: #000000; font-size: 9;">PENGEMUDI KENDARAAN INI :
+                                    <br>PELANGGARAN UU NO.22 TAHUN 2009 PASAL 106 AYAT (4) DAN NOMOR 1 TAHUN 2013 PASAL 225 HURUF B
+                                    <br>DAN
+                                    <br>DILAKUKAN PENGEMBOKAN RODA KENDARAAN SESUAI PERDA KOTA SURAKARTA NO.1 TAHUN 2013 PASAL 231 AYAT 1 UNTUK SELANJUTNYA PENGEMUDI SEGERA MELAKUKAN :
+                                </P>
+                                <p style="margin-left: 30px; color: #000000; font-size: 8;">
+                                    1. PEMBAYARAN DENDA PELANGGARAN PADA WEBSITE <b>WWW.GEMBOK,GO.ID</b> ATAU BARCODE DIBAWAH.
+                                    <br> 2. SEGERA SELESAIKAN PEMBAYARAN DENDA DENGAN CARA :
+                                </p>
+                            </div>
+                            <div class="col-md-12 mb-2 text-center">
+                                <img src="./assets/images/Conto_QR.png" style="height: 50; width: 50;">
+                            </div>
+        
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End HTML-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sebelah Kiri-->
+        </div>
+        <!-- End Konten Layout -->
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+
+  <!-- Multi Select Custome -->
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+    VirtualSelect.init({
+      ele: '#multi_option',
+      // showValueAsTags: true,
+
+    });
+    VirtualSelect.init({
+      ele: '#sample-select',
+      options: [
+        { label: 'Semua', value: '1' },
+        { label: 'Trial', value: '2' },
+        { label: 'Kontrak', value: '3' },
+        // { label: 'Options 3', value: '3' },
+      ],
+    });
+  </script>
+  <!-- Editor Template -->
+  <script>
+    // editor
+    var editor = document.getElementById('editor');
+    if (editor) {
+      var toolbarOptions = [
+        [
+          {
+            'font': []
+          }],
+        [
+          {
+            'header': [1, 2, 3, 4, 5, 6, false]
+          }],
+        ['bold', 'italic', 'underline', 'strike'],
+        ['blockquote', 'code-block'],
+        [
+          {
+            'header': 1
+          },
+          {
+            'header': 2
+          }],
+        [
+          {
+            'list': 'ordered'
+          },
+          {
+            'list': 'bullet'
+          }],
+        [
+          {
+            'script': 'sub'
+          },
+          {
+            'script': 'super'
+          }],
+        [
+          {
+            'indent': '-1'
+          },
+          {
+            'indent': '+1'
+          }], // outdent/indent
+        [
+          {
+            'direction': 'rtl'
+          }], // text direction
+        [
+          {
+            'color': []
+          },
+          {
+            'background': []
+          }], // dropdown with defaults from theme
+        [
+          {
+            'align': []
+          }],
+        ['clean'] // remove formatting button
+      ];
+      var quill = new Quill(editor,
+        {
+          modules:
+          {
+            toolbar: toolbarOptions
+          },
+          theme: 'snow'
+        });
+    }    
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

@@ -1,0 +1,1059 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/G.png">
+  <title>Gembok | User Admin</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="css/virtual-select.min.css">  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Include Date Range Picker -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <img src="assets/images/Gembok.svg" style="height: 30px; height: 40px;" alt="">
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          
+            <ul class="nav text-center" style="background-color: #161616; border-radius: 16px;">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="ph ph-squares-four fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="user_admin.html" class="nav-link active" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="ph ph-user-square fe-24 active"></i><span class="ml-lg-2" style="font-size: 14;">User Management</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="ph ph-scroll fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Data Tilang</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="template_surat.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="ph ph-file-text fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Template Surat</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="ph ph-gear fe-24"></i><span class="ml-lg-2" style="font-size: 14;">Pengaturan</span>
+                  </a>
+                </li>
+            </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <span class="avatar avatar-sm mt-2 name-tag">
+            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+          </span>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <h2 class="h1 page-title" style="color: #000000;">User</h2>
+            <h2 class="h1 page-title" style="color: #000000;">Management</h2>
+          </div>
+          <div class="col-md-auto">
+            <span class="page-title" style="color: #000000;"><b>Jumlah User Admin</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>56 <i class="ph ph-user-circle fe-16"></i></b></h2>
+          </div>
+          <div class="col col-lg-2">
+            <span class="page-title" style="color: #000000;"><b>Jumlah User Petugas</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>268 <i class="ph ph-user-square fe-16"></i></b></h2>
+          </div>
+        </div>
+
+
+        <!-- custom menu -->
+        <div class="row justify-content" style="margin-top: 30px;">
+          <div class="col-md-12 mb-4">
+            <ul class="nav nav-pills" id="pills-tab2" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link px-3 active" id="pills-semua" data-toggle="pill" href="#semua" role="tab" aria-controls="pills-semua" aria-selected="true"><b>Admin</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" id="pills-belum-dibayar" data-toggle="pill" href="#belum-dibayar" role="tab" aria-controls="pills-belum-dibayar" aria-selected="false"><b>Petugas</b></a>
+              </li>
+              <div class="col text-right">
+                <select id="multi_option" multiple name="native-select" placeholder="= Filter" data-silent-initial-value-set="false" style="border-radius: 20px;">
+                    <optgroup label="Urutkan Berdasarkan">
+                      <option value="1">Last Modified</option>
+                      <option value="2">Alphabetical Ascending</option>
+                      <option value="3">Alphabetical Descending</option>
+                      <option value="4">Date Created Oldest</option>
+                      <option value="5">Date Created Newest</option>
+                    </optgroup>
+                    <optgroup label="Status Akun">
+                      <option value="A">Aktif</option>
+                      <option value="TA">Tidak Aktif</option>
+                    </optgroup>
+                </select>
+              </div>
+            </ul>
+
+            <div class="tab-content mb-2" id="pills-tabContent2">
+              <!-- Konten Admin -->
+              <div class="tab-pane fade show active" id="semua" role="tabpanel" aria-labelledby="pills-semua">
+                <div class="card mb-0" style="border-radius: 12px; border-top-left-radius: 0px;">
+                  <div class="card-body">
+
+                    <div class="row justify-content" style="margin-top: 15px;">
+                        <div class="col-md-4 mb-2">
+                          <label for="search" class="sr-only">Search</label>
+                          <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-md-8 mb-2 text-right">
+                            <button class="btn" type="button"><span class="fe fe-share"></span></button>
+                            <button type="button" data-toggle="modal" data-target="#buatuseradmin" class="btn btn-sm text-white" 
+                            style="border-radius: 10px; background-color: #E42915;"><span class="fe fe-user"></span>+ Buat User Admin</button>
+                            <!-- Modal Buat User Admin -->
+                            <div class="modal fade text-left" id="buatuseradmin" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                    <div class="modal-content" style="border-radius: 16px; border: none;">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="defaultModalLabel">Buat Akun Admin Baru</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row" style="margin-top: 15px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Informasi Personal</h5>
+                                            <span class="strong">
+                                              Profil informasi akun pengguna.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Foto </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-5">
+                                                  <img src="assets/avatars/face-1.jpg" class="img-rounded" style="width: auto; height: 70px; border-radius: 100px;">
+                                                  <br>
+                                                  <input type="file" id="file" name="file" class="form-control" style="border: none;">
+                                                  <input type="hidden" id="foto" name="foto" value="<?=$foto;?>">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <span class="strong" style="font-size: small;">
+                                                    Ukuran gambar : maks. 1MB
+                                                    <br>
+                                                    Format gambar. JPEG, PNG
+                                                  </span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputemail" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Email </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="email" class="form-control" id="inputemail" placeholder="Masukkan email anda">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="almat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Alamat </b></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat">
+                                                </div>
+                                              </div>
+                                              <fieldset class="form-group">
+                                                <div class="row">
+                                                  <label class="col-form-label col-sm-3 pt-0 text-right" style="color: #152C5B;"><b>Jenis Kelamin</b></label>
+                                                  <div class="col-sm-9">
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                      <label class="form-check-label" for="gridRadios1"> Laki-laki </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                      <label class="form-check-label" for="gridRadios2"> Perempuan </label>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+                                            
+                                              <!-- <div class="form-group mb-2">
+                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                              </div> -->
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" style="margin-top: 30px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Pengaturan Akun</h5>
+                                            <span class="strong">
+                                              Atur username dan password akun.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Username </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputusername" placeholder="Masukkan username">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputpassword" placeholder="Masukkan password">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputulangpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Ulang Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukkan ulang password">
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                          <div class="text-right mt-3">
+                                              <button type="button" class="btn mb-2 btn-off "
+                                                  data-dismiss="modal"
+                                                  style="border-radius: 16px;"> Batal </button>
+                                              <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Modal Buat User Admin -->
+                        </div>
+                    </div>                    
+                    
+                    <div class="row mt-3" style="border-radius: 12px;">
+                        <div class="col-md-12">
+                          <div class="card" style="height: 600px;">
+                            <div class="card-body">
+                              <!-- table start -->
+                            <div class="table-responsive">
+                              <table class="table datatables" id="dataTable-1">
+                                <thead>
+                                  <tr>
+                                    <th>UserID</th>
+                                    <th>Tanggal Dibuat</th>
+                                    <th>Nama Lengkap</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>No Whatsapp</th>
+                                    <th>Alamat</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>User ID</td>
+                                    <td>Tanggal Dibuat</td>
+                                    <td>Satrio Adib</td>
+                                    <td>trio</td>
+                                    <td>satrio@gmail.com</td>
+                                    <td>089510765236</td>
+                                    <td>Jalan Erlangga 12</td>
+                                    <td>
+                                      <a data-toggle="modal" data-target="#hapusadmin" style="margin-right: 10px;"><span class="fe fe-trash-2"></span></a>
+                                      <a data-toggle="modal" data-target="#ubahuseradmin"><span class="fe fe-edit-3"></span></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>User ID</td>
+                                    <td>Tanggal Dibuat</td>
+                                    <td>Satrio Adib</td>
+                                    <td>trio</td>
+                                    <td>satrio@gmail.com</td>
+                                    <td>089510765236</td>
+                                    <td>Jalan Erlangga 12</td>
+                                    <td>
+                                      <a data-toggle="modal" data-target="#hapusadmin" style="margin-right: 10px;"><span class="fe fe-trash-2"></span></a>
+                                      <a data-toggle="modal" data-target="#ubahuseradmin"><span class="fe fe-edit-3"></span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                              <!-- table end -->
+                            <!-- Modal Ubah User Admin -->
+                            <div class="modal fade" id="ubahuseradmin" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                    <div class="modal-content" style="border-radius: 16px; border: none;">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="defaultModalLabel">Ubah Data & Informasi User Admin Baru</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row" style="margin-top: 15px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Informasi Personal</h5>
+                                            <span class="strong">
+                                              Profil informasi akun pengguna.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Foto </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-5">
+                                                  <img src="assets/avatars/face-1.jpg" class="img-rounded" style="width: auto; height: 70px; border-radius: 100px;">
+                                                  <br>
+                                                  <input type="file" id="file" name="file" class="form-control" style="border: none;">
+                                                  <input type="hidden" id="foto" name="foto" value="<?=$foto;?>">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <span class="strong" style="font-size: small;">
+                                                    Ukuran gambar : maks. 1MB
+                                                    <br>
+                                                    Format gambar. JPEG, PNG
+                                                  </span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputemail" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Email </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="email" class="form-control" id="inputemail" placeholder="Masukkan email anda">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="almat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Alamat </b></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat">
+                                                </div>
+                                              </div>
+                                              <fieldset class="form-group">
+                                                <div class="row">
+                                                  <label class="col-form-label col-sm-3 pt-0 text-right" style="color: #152C5B;"><b>Jenis Kelamin</b></label>
+                                                  <div class="col-sm-9">
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                      <label class="form-check-label" for="gridRadios1"> Laki-laki </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                      <label class="form-check-label" for="gridRadios2"> Perempuan </label>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+                                            
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" style="margin-top: 30px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Pengaturan Akun</h5>
+                                            <span class="strong">
+                                              Atur username dan password akun.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Username </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputusername" placeholder="Masukkan username">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputpassword" placeholder="Masukkan password">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputulangpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Ulang Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukkan ulang password">
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                          <div class="text-right mt-3">
+                                              <button type="button" class="btn mb-2 btn-off "
+                                                  data-dismiss="modal"
+                                                  style="border-radius: 16px;"> Batal </button>
+                                              <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan Perubahan</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Modal Ubah User Admin -->
+              
+                            <!-- Modal Hapus User Admin -->
+                            <div class="modal fade" id="hapusadmin" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                                    style="border-radius: 50%;">
+                                    <div class="modal-content" style="border-radius: 16px; border: none;">
+                                      <div class="modal-body text-center">
+                                          <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                                          <span class="strong">Data akan dihapus selamanya</span>
+                                          <div class="text-center mt-3">
+                                              <button type="button" class="btn mb-2 btn-off "
+                                                  data-dismiss="modal"
+                                                  style="border-radius: 16px;">Batal</button>
+                                              <button type="button" class="btn mb-2 btn-on text-white"
+                                                  style="border-radius: 16px;"
+                                                  data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                                  data-bs-dismiss="modal">Hapus</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Modal Hapus User Admin -->
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Konten Petugas -->
+              <div class="tab-pane fade" id="belum-dibayar" role="tabpanel" aria-labelledby="pills-belum-dibayar">
+                <div class="card mb-0" style="border-radius: 12px;">
+                  <div class="card-body">
+                    <div class="row justify-content" style="margin-top: 15px;">
+                        <div class="col-md-4 mb-2">
+                          <label for="search" class="sr-only">Search</label>
+                          <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-md-8 mb-2 text-right">
+                          <button class="btn" type="button"><span class="fe fe-share"></span></button>
+                          <button type="button" data-toggle="modal" data-target="#buatuserpetugas" class="btn btn-sm text-white" 
+                          style="border-radius: 10px; background-color: #E42915;"><span class="fe fe-user"></span>+ Buat User Petugas</button>
+                          <!-- Slide Modal Tambah User Petugas -->
+                          <div class="modal fade text-left" id="buatuserpetugas" tabindex="-1" role="dialog"
+                          aria-labelledby="verticalModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                  <div class="modal-content" style="border-radius: 16px; border: none;">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="defaultModalLabel">Buat Akun Petugas Baru</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row" style="margin-top: 15px;">
+                                        <div class="col-md-4 mb-4">
+                                          <h5 style="color: #152C5B;">Informasi Personal</h5>
+                                          <span class="strong">
+                                            Profil informasi akun pengguna.
+                                          </span>
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                          <form>
+                                            <div class="form-group row">
+                                              <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Foto </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-5">
+                                                <img src="assets/avatars/face-1.jpg" class="img-rounded" style="width: auto; height: 70px; border-radius: 100px;">
+                                                <br>
+                                                <input type="file" id="file" name="file" class="form-control" style="border: none;">
+                                                <input type="hidden" id="foto" name="foto" value="<?=$foto;?>">
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <span class="strong" style="font-size: small;">
+                                                  Ukuran gambar : maks. 1MB
+                                                  <br>
+                                                  Format gambar. JPEG, PNG
+                                                </span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputemail" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Email </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="inputemail" placeholder="Masukkan email anda">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="almat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Alamat </b></label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat">
+                                              </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                              <div class="row">
+                                                <label class="col-form-label col-sm-3 pt-0 text-right" style="color: #152C5B;"><b>Jenis Kelamin</b></label>
+                                                <div class="col-sm-9">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1"> Laki-laki </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2"> Perempuan </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </fieldset>                            
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row" style="margin-top: 30px;">
+                                        <div class="col-md-4 mb-4">
+                                          <h5 style="color: #152C5B;">Pengaturan Akun</h5>
+                                          <span class="strong">
+                                            Atur username dan password akun.
+                                          </span>
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                          <form>
+                                            <div class="form-group row">
+                                              <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Username </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputusername" placeholder="Masukkan username">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Password </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputpassword" placeholder="Masukkan password">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputulangpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Ulang Password </b><span style="color: #FF0000;">*</span></label>
+                                              <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukkan ulang password">
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row" style="margin-top: 30px;">
+                                        <div class="col-md-4 mb-4">
+                                          <h5 style="color: #152C5B;">Status Akun</h5>
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                          <form>
+                                            <fieldset class="form-group">
+                                              <div class="row">
+                                                <label class="col-form-label col-sm-3 pt-0" style="color: #152C5B;"><b>Status</b></label>
+                                                <div class="col-sm-9">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1"> Aktif </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2"> Tidak Aktif </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </fieldset>                                
+                                          </form>
+                                        </div>
+                                      </div>                          
+                                      <div class="text-right mt-3">
+                                            <button type="button" class="btn mb-2 btn-off "
+                                                data-dismiss="modal"
+                                                style="border-radius: 16px;"> Batal </button>
+                                            <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--End modal tambah User Petugas -->
+                        </div>
+                    </div>
+                    <div class="row mt-3" style="border-radius: 12px;">
+                        <div class="col-md-12">
+                          <div class="card" style="height: 600px;">
+                            <div class="card-body">
+                              <!-- table start -->
+                            <div class="table-responsive">
+                              <table class="table datatables" id="dataTable-1">
+                                <thead>
+                                  <tr>
+                                    <th>UserID</th>
+                                    <th>Tanggal Dibuat</th>
+                                    <th>Nama Lengkap</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>No Whatsapp</th>
+                                    <th>Alamat</th>
+                                    <th>status</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>User ID</td>
+                                    <td>Tanggal Dibuat</td>
+                                    <td>Satrio Adib</td>
+                                    <td>trio</td>
+                                    <td>satrio@gmail.com</td>
+                                    <td>089510765236</td>
+                                    <td>Jalan Erlangga 12</td>
+                                    <td><span class="badge badge-aktif"
+                                      style="border-radius: 15px; width:70px;">Aktif</span>
+                                    </td>
+                                    <td>
+                                      <a data-toggle="modal" data-target="#hapuspetugas" style="margin-right: 10px;"><span class="fe fe-trash-2"></span></a>
+                                      <a data-toggle="modal" data-target="#ubahuserpetugas"><span class="fe fe-edit-3"></span></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>User ID</td>
+                                    <td>Tanggal Dibuat</td>
+                                    <td>Satrio Adib</td>
+                                    <td>trio</td>
+                                    <td>satrio@gmail.com</td>
+                                    <td>089510765236</td>
+                                    <td>Jalan Erlangga 12</td>
+                                    <td><span class="badge badge-tidak-aktif"
+                                      style="border-radius: 15px; width:95px;">Tidak Aktif</span>
+                                    </td>
+                                    <td>
+                                      <a data-toggle="modal" data-target="#hapuspetugas" style="margin-right: 10px;"><span class="fe fe-trash-2"></span></a>
+                                      <a data-toggle="modal" data-target="#ubahuserpetugas"><span class="fe fe-edit-3"></span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                              <!-- table end -->
+                            <!-- Modal Ubah User Petugas -->
+                            <div class="modal fade text-left" id="ubahuserpetugas" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                    <div class="modal-content" style="border-radius: 16px; border: none;">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="defaultModalLabel">Ubah Data & Informasi User Petugas Baru</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row" style="margin-top: 15px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Informasi Personal</h5>
+                                            <span class="strong">
+                                              Profil informasi akun pengguna.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Foto </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-5">
+                                                  <img src="assets/avatars/face-1.jpg" class="img-rounded" style="width: auto; height: 70px; border-radius: 100px;">
+                                                  <br>
+                                                  <input type="file" id="file" name="file" class="form-control" style="border: none;">
+                                                  <input type="hidden" id="foto" name="foto" value="<?=$foto;?>">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <span class="strong" style="font-size: small;">
+                                                    Ukuran gambar : maks. 1MB
+                                                    <br>
+                                                    Format gambar. JPEG, PNG
+                                                  </span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputemail" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Email </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="email" class="form-control" id="inputemail" placeholder="Masukkan email anda">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="almat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Alamat </b></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat">
+                                                </div>
+                                              </div>
+                                              <fieldset class="form-group">
+                                                <div class="row">
+                                                  <label class="col-form-label col-sm-3 pt-0 text-right" style="color: #152C5B;"><b>Jenis Kelamin</b></label>
+                                                  <div class="col-sm-9">
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                      <label class="form-check-label" for="gridRadios1"> Laki-laki </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                      <label class="form-check-label" for="gridRadios2"> Perempuan </label>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </fieldset>                            
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" style="margin-top: 30px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Pengaturan Akun</h5>
+                                            <span class="strong">
+                                              Atur username dan password akun.
+                                            </span>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <div class="form-group row">
+                                                <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Username </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="inputusername" placeholder="Masukkan username">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputpassword" placeholder="Masukkan password">
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="inputulangpassword" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Ulang Password </b><span style="color: #FF0000;">*</span></label>
+                                                <div class="col-sm-9">
+                                                  <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukkan ulang password">
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" style="margin-top: 30px;">
+                                          <div class="col-md-4 mb-4">
+                                            <h5 style="color: #152C5B;">Status Akun</h5>
+                                          </div>
+                                          <div class="col-md-8 mb-4">
+                                            <form>
+                                              <fieldset class="form-group">
+                                                <div class="row">
+                                                  <label class="col-form-label col-sm-3 pt-0" style="color: #152C5B;"><b>Status</b></label>
+                                                  <div class="col-sm-9">
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                      <label class="form-check-label" for="gridRadios1"> Aktif </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                      <label class="form-check-label" for="gridRadios2"> Tidak Aktif </label>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </fieldset>                                
+                                            </form>
+                                          </div>
+                                        </div>                          
+                                        <div class="text-right mt-3">
+                                              <button type="button" class="btn mb-2 btn-off "
+                                                  data-dismiss="modal"
+                                                  style="border-radius: 16px;"> Batal </button>
+                                              <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan Perubahan</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- End Modal Ubah User Petugas -->
+                            <!-- Modal Hapus User Petugas -->
+                            <div class="modal fade" id="hapuspetugas" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                                    style="border-radius: 50%;">
+                                    <div class="modal-content" style="border-radius: 16px; border: none;">
+                                      <div class="modal-body text-center">
+                                          <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                                          <span class="strong">Data akan dihapus selamanya</span>
+                                          <div class="text-center mt-3">
+                                              <button type="button" class="btn mb-2 btn-off "
+                                                  data-dismiss="modal"
+                                                  style="border-radius: 16px;">Batal</button>
+                                              <button type="button" class="btn mb-2 btn-on text-white"
+                                                  style="border-radius: 16px;"
+                                                  data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                                  data-bs-dismiss="modal">Hapus</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Modal Hapus User Petugas -->
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Custom menu -->
+
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+  <script>
+    // Script untuk menghapus pilihan saat tombol "X" ditekan
+    document.querySelector('.clear-button').addEventListener('click', function () {
+      const selectElement = document.querySelector('.input-select');
+      selectElement.value = '';
+    });
+
+    // Script untuk menampilkan/menghilangkan tombol "X" berdasarkan pilihan yang dipilih
+    const selectElement = document.querySelector('.input-select');
+    selectElement.addEventListener('change', function () {
+      const clearButton = document.querySelector('.clear-button');
+      clearButton.style.display = this.value !== '' ? 'block' : 'none';
+    });
+  </script>
+  <!-- Multi Select Custome -->
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+    VirtualSelect.init({
+      ele: '#multi_option',
+      // showValueAsTags: true,
+      
+    });
+    VirtualSelect.init({
+      ele: '#sample-select',
+      options: [
+        { label: 'Semua', value: '1' },
+        { label: 'Trial', value: '2' },
+        { label: 'Kontrak', value: '3' },
+        // { label: 'Options 3', value: '3' },
+      ],
+    });
+  </script>  
+  <!-- Grafik Custom -->
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['1 Mei', '2 Mei', '3 Mei', '4 Mei', '5 Mei', '6 Mei', '7 Mei', '8 Mei', '9 Mei', '10 Mei', '11 Mei', '12 Mei'],
+        datasets: [{
+          label: 'Total Denda Terkumpul',
+          data: [980000, 976000, 1390000, 865000, 578000, 922700, 1123900, 1523800, 334000, 157800, 434800, 570000],
+          borderWidth: 2,
+          fill : false,
+          borderColor: ['rgb(133, 216, 51)'],
+        }, 
+        {
+          label: 'Tilang Gembok',
+          data: [1289000, 1956000, 378600, 545900, 234000, 3456800, 777900, 867800, 856600, 978000, 778900, 130000],
+          borderWidth: 2,
+          fill :false,
+          borderColor: ['rgb(151, 71, 255)'],
+        },
+        {
+          label: 'Tilang Derek',
+          data: [1589000, 956000, 728600, 175900, 974000, 2156800, 107900, 367800, 176600, 428000, 418900, 250000],
+          borderWidth: 2,
+          fill : false,
+          borderColor: ['rgb(245, 190, 79)'],
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <!-- Script Include Date Range Picker -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script><script>
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

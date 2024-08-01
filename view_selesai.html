@@ -1,0 +1,419 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/images/G.png">
+  <title>Gembok | Data Tilang</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="css/virtual-select.min.css"> 
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center" style="background-color: #ffffff;">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <img src="assets/images/G.png" style="height: 40px; width: 40;" alt="">
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu1" class="navmenu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="ml-lg-2" style="font-size: 14;">Beranda</span>
+              </a>
+            </li>
+            <i class="ph ph-caret-right"></i>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="ml-lg-2" style="font-size: 14;">Data Tilang</span>
+              </a>
+            </li>
+            <i class="ph ph-caret-right"></i>
+            <li class="nav-item">
+              <a href="#" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="ml-lg-2" style="font-size: 14;">Rincian Data Tilang</span>
+              </a>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <span class="avatar avatar-sm mt-2 name-tag">
+            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+          </span>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 100px;">
+      <div class="container-fluid">
+
+        <!-- Konten view -->
+        <div class="row justify-content-center mt-3" style="margin-top: 50px;">
+          <div class="col-md-3 mb-2">
+            <!-- Kiri 1 -->
+            <div class="mb-2">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; margin-bottom: 30px;">
+                    <div class="col-12" style="margin-bottom: 10px;">
+                        <p class="h5" style="color: #000000;">Pengemudi</p>
+                    </div>
+                    <div class="col-12">
+                        <strong class="mb-1" style="color: #020202;">Dhimas Aria W</strong>
+                        <p class="small text-muted mb-1">089510324321</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kiri 2 -->
+            <div class="mb-2">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-2">
+                    <div class="row" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; margin-bottom: 10px;">
+                      <div class="col-md-12">
+                        <label style="color: #E42915;">Tambahkan Catatan</label>
+                        <textarea class="form-control" id="example-textarea" rows="4" placeholder="Catatan hanya dilihat oleh admin dan petugas" style="margin-top: 10px;"></textarea>
+                        <button type="submit" class="btn btn-on text-white float-right" style="border-radius: 15px; margin-top: 10px;">Simpan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <!-- Tengah 1 -->
+            <div class="mb-2">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-2">
+                    <div class="row" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+                      <div class="col-auto">
+                        <i class="ph ph-files fe-24" style="color: #E42915;"></i>
+                      </div>
+                      <div class="col ml-n2">
+                          <strong class="mb-1" style="color: #020202;">Selesai</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Tengah 2 -->
+            <div class="mb-2">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-2">
+                    <div class="row" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+                        <div class="col-md-6 mb-2">
+                            <div class="card" style="border-radius: 15px;">
+                              <div class="card-body p-2">
+                                <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                                  <div class="col-auto">
+                                    <i class="ph ph-receipt fe-24" style="color: #E42915;"></i>
+                                  </div>
+                                  <div class="col ml-n2">
+                                      <strong class="mb-1" style="color: #020202;">ID Biling</strong>
+                                      <p class="small text-muted mb-1">2405091.1181 CNCS</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body p-2">
+                                  <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                                    <div class="col-auto">
+                                      <i class="ph ph-car-simple fe-24" style="color: #E42915;"></i>
+                                    </div>
+                                    <div class="col ml-n2">
+                                        <strong class="mb-1" style="color: #020202;">Jenis Kendaraan</strong>
+                                        <p class="small text-muted mb-1">Mobil</p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div class="card" style="border-radius: 15px;">
+                              <div class="card-body p-2">
+                                <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                                  <div class="col-auto">
+                                    <i class="ph ph-notification fe-24" style="color: #E42915;"></i>
+                                  </div>
+                                  <div class="col ml-n2">
+                                      <strong class="mb-1" style="color: #020202;">No. Plat</strong>
+                                      <p class="small text-muted mb-1">H 6869 TF</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body p-2">
+                                  <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                                    <div class="col-auto">
+                                        <i class="ph ph-cards fe-24" style="color: #E42915;"></i>
+                                    </div>
+                                    <div class="col ml-n2">
+                                        <strong class="mb-1" style="color: #020202;">Jenis Tilang</strong>
+                                        <p class="small text-muted mb-1">Gembok</p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <div class="card" style="border-radius: 15px;">
+                              <div class="card-body p-2">
+                                <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                                  <div class="col-auto">
+                                    <i class="ph ph-map-pin-line fe-24" style="color: #E42915;"></i>
+                                  </div>
+                                  <div class="col ml-n2">
+                                      <strong class="mb-1" style="color: #020202;">Lokasi Tilang</strong>
+                                      <p class="small text-muted mb-1">Jl. Sriwijaya No.106-108, Wonodri, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50242</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Tengah 3 -->     
+            <div class="mb-2">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-2">
+                    <div class="row" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+                        <div class="col-md-9 mb-2">
+                            <i class="ph ph-files fe-24" style="color: #E42915;"></i><strong style="color: #020202;"> Informasi Pembayaran</strong>
+                        </div>
+                        <div class="col-auto float-right">
+                            <a data-toggle="modal" data-target="#tampilbukti"><button type="button" class="btn btn-sm text-black" style="border-radius: 10px; border-color: #9D9D9D;">
+                                Lihat Bukti Pembayaran</button></a>
+                        </div>
+                        <div class="col-12" style="margin-bottom: 10px; margin-top: 10px;">
+                            <p class="h5" style="color: #000000;">DENDA TILANG PARKIR - MOTOR</p>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <span class="text-muted small mx-2">Jenis Kendaraan: </span><strong>Motor</strong>
+                            <br>
+                            <span class="text-muted small mx-2">Jenis Tilang: </span><strong>Gembok</strong>
+                        </div>
+                        <div class="col-md-6 mb-2 text-right">
+                            <p class="h5" style="color: #000000;">Rp. 500.000</p>
+                        </div>
+                        <hr>
+                        <div class="col-md-8 mb-2 text-right">
+                            <strong style="color: #020202;"> Total Denda</strong>
+                        </div>
+                        <div class="col-md-4 mb-2 text-right">
+                            <p class="h5" style="color: #000000;">Rp. 500.000</p>
+                        </div>
+                        <div class="col-md-8 mb-2 text-right">
+                            <p class="h5" style="color: #000000;">Dibayar (QRIS BCA)</p>
+                        </div>
+                        <div class="col-md-4 mb-2 text-right">
+                            <p class="h4" style="color: #E42915;">Rp. 500.000</p>
+                        </div>
+                          <!-- Modal Lihat Bukti Pembayaran -->
+                          <div class="modal fade" id="tampilbukti" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-md" role="document"
+                            style="border-radius: 50%;">
+                              <div class="modal-content" style="border-radius: 16px; border: none;">
+                                <img src="./assets/images/bukti1.png">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Bukti Pembayaran --> 
+                    </div>
+                  </div>
+                </div>
+            </div   >                               
+          </div>
+          <div class="col-md-3 mb-2">
+            <div class="mb-2">
+              <div class="timeline" style="border-radius: 15px;">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                    <p class="h5" style="color: #000000;">Log Aktifitas</p>
+                    <div class="col-md-12">
+                        <div class="pb-3 timeline-item"><i class="ph ph-seal-check" style="color: #57A468;"></i>
+                            <div class="pl-5">
+                              <div class="mb-1"><strong style="color: #57A468;">Selesai</strong></div>
+                              <p class="small text-muted">09/05/2024 | 09:20</p>
+                            </div>
+                        </div>
+                        <div class="pb-3 timeline-item"><i class="ph ph-receipt" style="color: #000000;"></i>
+                          <div class="pl-5">
+                            <div class="mb-1"><strong style="color: #000000;">Pengemudi melakukan pembayaran</strong></div>
+                            <p class="small text-muted">09/05/2024 | 09:20</p>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!-- End Konten view -->
+
+
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+  <script>
+    // Script untuk menghapus pilihan saat tombol "X" ditekan
+    document.querySelector('.clear-button').addEventListener('click', function () {
+      const selectElement = document.querySelector('.input-select');
+      selectElement.value = '';
+    });
+
+    // Script untuk menampilkan/menghilangkan tombol "X" berdasarkan pilihan yang dipilih
+    const selectElement = document.querySelector('.input-select');
+    selectElement.addEventListener('change', function () {
+      const clearButton = document.querySelector('.clear-button');
+      clearButton.style.display = this.value !== '' ? 'block' : 'none';
+    });
+  </script>
+  <!-- Multi Select Custome -->
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+    VirtualSelect.init({
+      ele: '#multi_option',
+      // showValueAsTags: true,
+      
+    });
+    VirtualSelect.init({
+      ele: '#sample-select',
+      options: [
+        { label: 'Semua', value: '1' },
+        { label: 'Trial', value: '2' },
+        { label: 'Kontrak', value: '3' },
+        // { label: 'Options 3', value: '3' },
+      ],
+    });
+  </script>  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>
