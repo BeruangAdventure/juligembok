@@ -212,7 +212,141 @@
         <!-- custom menu -->
         <div class="row" style="margin-top: 20px;">
           <div class="col-md-12 mb-4">
-            <ul class="nav nav-pills" id="pills-tab2" role="tablist">
+            <ul class="nav nav-pills" id="pills-tab3" role="tablist"> <!-- UI Online dan Offline-->
+                <li class="nav-item">
+                  <a class="nav-link px-3 active" id="pills-online" data-toggle="pill" href="#online" role="tab" aria-controls="pills-online" aria-selected="true">Online</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" id="pills-offline" data-toggle="pill" href="#offline" role="tab" aria-controls="pills-offline" aria-selected="false">Offline</a>
+                </li>
+                  <div class="col text-right">
+                    <button type="button" data-toggle="modal" data-target="#buatdendabaru" class="btn btn-sm text-white" style="border-radius: 10px; 
+                    background-color: #E42915; border-color: #E42915;">
+                      Buat Tiket Denda</button>
+                    <button type="button" class="btn btn-sm" style="border-radius: 10px; border-color: gray;">
+                        Export</button>
+                  </div>
+                  <!-- Modal Buat Data Denda -->
+                  <div class="modal fade text-left" id="buatdendabaru" tabindex="-1" role="dialog"
+                  aria-labelledby="verticalModalTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                          <div class="modal-content" style="border-radius: 16px; border: none;">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="defaultModalLabel">Tambah Data Denda - ID Billing 2405091.1181 CNCS</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-4 mb-4">
+                                  <h5 style="color: #152C5B;">Informasi Pengemudi</h5>
+                                  <span class="strong">
+                                    Profil informasi pengemudi
+                                  </span>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                  <form>
+                                    <div class="form-group row">
+                                      <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b></label>
+                                      <div class="col-sm-9">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Opsional">
+                                      </div>
+                                    </div>
+                                  
+                                  </form>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-4 mb-4">
+                                  <h5 style="color: #152C5B;">Informasi Kendaraan</h5>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                  <form>
+                                    <div class="form-group row">
+                                      <label for="inputnoplat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No.Plat</b><span style="color: #FF0000;">*</span></label>
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputnoplat" placeholder="AD 1111 FG">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="inputlokasikendaraan" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Lokasi Kendaraan</b></label>
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputlokasikendaraan" placeholder="Lokasi kendaraan ditilang">
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-4 mb-4">
+                                  <h5 style="color: #152C5B;">Keterangan Denda</h5>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                  <form>
+                                    <div class="form-group row">
+                                      <label for="example-select1" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Jenis Tilang </b><span style="color: #FF0000;">*</span></label>
+                                      <div class="col-sm-9">
+                                        <select class="form-control" id="example-select1">
+                                          <option>Gembok Mobil</option>
+                                          <option>Gembok Motor</option>
+                                          <option>Derek Mobil</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="example-disable" class="col-sm-3 col-form-label text-right" style="color: #9A9A9A;">Total Denda</label>
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="example-disable" disabled="" value="Rp -">
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-4 mb-4">
+                                  <h5 style="color: #152C5B;">Pembayaran</h5>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                  <form>
+                                    <div class="form-group row">
+                                      <label for="example-select1" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Metode Bayar </b><span style="color: #FF0000;">*</span></label>
+                                      <div class="col-sm-9">
+                                        <select class="form-control" id="example-select1">
+                                          <option>QRIS</option>
+                                          <option>Transfer Bank Jateng</option>
+                                          <option>Tunai</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                                <div class="text-right mt-3">
+                                    <button type="button" class="btn mb-2 btn-off "
+                                        data-dismiss="modal"
+                                        style="border-radius: 16px;"> Batal </button>
+                                    <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Lanjutkan</button>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End Modal Buat Data Denda -->                
+            </ul> <!-- End UI Online dan Offline-->
+            <div class="tab-content mb-2" id="pills-tabContent3"> 
+                <!-- UI Tab Online -->
+                <div class="tab-pane fade show active" id="online" role="tabpanel" aria-labelledby="pills-online">
+            <ul class="nav nav-pills" id="pills-tab2" role="tablist" style="background-color: #ffffff; border-top-right-radius: 20px;">
               <li class="nav-item">
                 <a class="nav-link px-3 active" id="pills-semua" data-toggle="pill" href="#semua" role="tab" aria-controls="pills-semua" aria-selected="true">Semua</a>
               </li>
@@ -222,129 +356,12 @@
               <li class="nav-item">
                 <a class="nav-link px-3" id="pills-selesai-bayar" data-toggle="pill" href="#pills-selesai" role="tab" aria-controls="pills-selesai-bayar" aria-selected="false">Selesai</a>
               </li>
-                <div class="col text-right">
-                  <button type="button" data-toggle="modal" data-target="#buatdendabaru" class="btn btn-sm text-white" style="border-radius: 10px; 
-                  background-color: #E42915; border-color: #E42915;">
-                    Buat Denda Baru</button>
-                  <button type="button" class="btn btn-sm" style="border-radius: 10px; border-color: gray;">
-                      Export</button>
-                </div>
-                <!-- Modal Buat Data Denda -->
-                <div class="modal fade text-left" id="buatdendabaru" tabindex="-1" role="dialog"
-                aria-labelledby="verticalModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                        <div class="modal-content" style="border-radius: 16px; border: none;">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="defaultModalLabel">Tambah Data Denda - ID Billing 2405091.1181 CNCS</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row" style="margin-top: 15px;">
-                              <div class="col-md-4 mb-4">
-                                <h5 style="color: #152C5B;">Informasi Pengemudi</h5>
-                                <span class="strong">
-                                  Profil informasi pengemudi
-                                </span>
-                              </div>
-                              <div class="col-md-8 mb-4">
-                                <form>
-                                  <div class="form-group row">
-                                    <label for="inputnamalengkap" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Nama Lengkap </b><span style="color: #FF0000;">*</span></label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="inputnamalengkap" placeholder="Masukkan nama lengkap">
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="phone" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No. Whatsapp </b></label>
-                                    <div class="col-sm-9">
-                                      <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomer whatsapp">
-                                    </div>
-                                  </div>
-                                
-                                </form>
-                              </div>
-                            </div>
-                            <hr>
-                            <div class="row" style="margin-top: 30px;">
-                              <div class="col-md-4 mb-4">
-                                <h5 style="color: #152C5B;">Informasi Kendaraan</h5>
-                              </div>
-                              <div class="col-md-8 mb-4">
-                                <form>
-                                  <div class="form-group row">
-                                    <label for="inputusername" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Jenis Kendaraan </b><span style="color: #FF0000;">*</span></label>
-                                    <div class="col-sm-9">
-                                      <select class="form-control" id="example-select1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="inputnoplat" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>No.Plat</b><span style="color: #FF0000;">*</span></label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="inputnoplat" placeholder="AD 1111 FG">
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="inputlokasikendaraan" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Lokasi Kendaraan</b></label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="inputlokasikendaraan" placeholder="Lokasi kendaraan ditilang">
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                            <hr>
-                            <div class="row" style="margin-top: 30px;">
-                              <div class="col-md-4 mb-4">
-                                <h5 style="color: #152C5B;">Informasi Denda</h5>
-                              </div>
-                              <div class="col-md-8 mb-4">
-                                <form>
-                                  <div class="form-group row">
-                                    <label for="example-select1" class="col-sm-3 col-form-label text-right" style="color: #152C5B;"><b>Jenis Tilang </b><span style="color: #FF0000;">*</span></label>
-                                    <div class="col-sm-9">
-                                      <select class="form-control" id="example-select1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="example-disable" class="col-sm-3 col-form-label text-right" style="color: #9A9A9A;">Total Denda</label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="example-disable" disabled="" value="Rp -">
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                              <div class="text-right mt-3">
-                                  <button type="button" class="btn mb-2 btn-off "
-                                      data-dismiss="modal"
-                                      style="border-radius: 16px;"> Batal </button>
-                                  <button type="submit" class="btn mb-2 btn-on text-white" style="border-radius: 16px;">Simpan</button>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Modal Buat Data Denda -->                
             </ul>
 
             <div class="tab-content mb-2" id="pills-tabContent2">
               <!-- Konten semua -->
               <div class="tab-pane fade show active" id="semua" role="tabpanel" aria-labelledby="pills-semua">
-                <div class="card mb-0" style="border-radius: 12px; border-top-left-radius: 0px;">
+                <div class="card mb-0" style="border-radius: 12px; border-top-left-radius: 0px; border-top-right-radius: 0px;">
                   <div class="card-body">
                     <div class="row justify-content">
                       <div class="col-md-4 mb-2">
@@ -382,7 +399,7 @@
                                   <th style="color: #CF7979;">Tanggal</th>
                                   <th style="color: #CF7979;">No.Plat</th>
                                   <th style="color: #CF7979;">Lokasi | Atas Nama</th>
-                                  <th style="color: #CF7979;">Jenis Kendaraan</th>
+                                  <th style="color: #CF7979;">Jenis Tiket</th>
                                   <th style="color: #CF7979;">Jenis Tilang</th>
                                   <th style="color: #CF7979;">Tarif Denda</th>
                                   <th style="color: #CF7979;">Status</th>
@@ -398,7 +415,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -421,7 +438,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Motor</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -444,9 +461,9 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
-                                  <td class="small">Gembok</td>
-                                  <td class="small">Rp.100.000</td>
+                                  <td class="small">Online</td>
+                                  <td class="small">Derek</td>
+                                  <td class="small">Rp.500.000</td>
                                   <td>
                                     <p class="mb-0 small"><b>Belum Diambil</b></p>
                                     <small class="mb-0 text-muted">Menunggu pengemudi menggambil kendaraan</small><br>
@@ -468,7 +485,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -488,7 +505,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -625,7 +642,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -648,7 +665,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Motor</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -671,7 +688,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -812,7 +829,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Mobil</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -832,7 +849,7 @@
                                     <p class="mb-0 small" style="color: #032F32;">Jl. Sriwijaya No.106-108, Wonodri</p>
                                     <small class="mb-0 text-muted">Petugas : <i style="color: #000000;">Dhimas Aria W<i></small>
                                   </td>
-                                  <td class="small">Motor</td>
+                                  <td class="small">Online</td>
                                   <td class="small">Gembok</td>
                                   <td class="small">Rp.100.000</td>
                                   <td>
@@ -891,6 +908,11 @@
                 </div>
               </div>
             </div>
+                </div><!-- End UI Tab Online -->
+                
+            <!-- UI Tab Offline -->
+            </div>
+
           </div>
         </div>
         <!-- End Custom menu -->
